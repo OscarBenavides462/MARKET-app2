@@ -1,3 +1,4 @@
+--create tabla users
 CREATE TABLE users (
 id BIGSERIAL PRIMARY KEY,
 firstname VARCHAR(30) NOT NULL,
@@ -15,4 +16,14 @@ deleted_at TIMESTAMPTZ NULL
 );
 --Insert into table users
 
-insert into users(firstname,lastname,mobile_number,email,password) values ('Joan C','ayana','3054545','joan@mail.co,','1234');
+insert into users(firstname,
+                    lastname,
+                    mobile_number,
+                    email,
+                    password) values ('Joan C',
+                    'ayana',
+                    '3054545',
+                    'joan@mail.co,',s
+                    '1234');
+
+--4/09/2025 primer request  
