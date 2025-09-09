@@ -14,15 +14,16 @@
         
     
     ";
-
+/* 
+*/
     $conn = pg_connect($data_conecction);
 
     if (!$conn)
         {
-            echo "ERROR";
+            echo "ERROR" .pcntl_get_last_error;
         }else 
         {
-            echo "Conecction successfully:::";
+            echo "Connection successfully:::";
         }
 
 ?>
